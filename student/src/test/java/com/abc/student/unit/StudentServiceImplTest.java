@@ -63,7 +63,7 @@ public class StudentServiceImplTest {
         List<StudentDTO> result = studentService.getAllStudents();
 
         assertThat(result).hasSize(1);
-        assertThat(result.get(0).getFirstName()).isEqualTo("John");
+        assertThat(result.get(0).getFirstName()).isEqualTo("Shafin");
         verify(studentRepository).findAll();
     }
 
@@ -104,8 +104,8 @@ public class StudentServiceImplTest {
 
         StudentDTO result = studentService.updateStudent(updatedDTO);
 
-        assertThat(result.getFirstName()).isEqualTo("Jane");
-        assertThat(result.getEmail()).isEqualTo("jane@yopmail.com");
+        assertThat(result.getFirstName()).isEqualTo("Will");
+        assertThat(result.getEmail()).isEqualTo("smith@yopmail.com");
     }
 
     @Test
