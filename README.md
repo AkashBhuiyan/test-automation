@@ -1,0 +1,1 @@
+docker run -p 3309:3306 --name student -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=student -d mysql
